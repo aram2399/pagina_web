@@ -1,0 +1,33 @@
+<html>
+<head> <title> Consulta de Impuestos </title> </head>
+<font color="White">
+<center> <h1> <FONT FACE="Hobo Std">Consulta tu impuesto</FONT> <color="white"> </h1>
+<body bgcolor="#15568E">
+<font color="Silver">
+<center> <h3> <FONT FACE="Geometr212 BkCn BT">Ropa</FONT> </h3>
+
+<script language="javascript">
+
+
+function Ropa()
+	{
+     var IVA,Precio,Total,Producto;
+
+Producto = prompt (" Inserte el nombre del producto");
+            	          
+Precio = Number(prompt(" Inserte el precio del producto "));
+									
+IVA = (Precio)*(.21);
+Total = (Precio)*(1.21)
+alert(" El IVA de "+Producto+  " es de: $ " +IVA.toFixed(2));
+alert ("El total a pagar sera "+Total.toFixed(2));
+	}
+ </script>
+
+<pre>
+<form method="get" onclick=Ropa()>
+<input name="boton1" type="image"
+src="file:///D:/IVA/Categorias/Ropa.jpg" width="150" height="90">
+
+</form>
+</body>
